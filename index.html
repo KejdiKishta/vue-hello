@@ -6,11 +6,19 @@
     <title>Document</title>
     <!-- vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="vue-container">
-        <h1></h1>
-
+    <div class="container">
+        <div class="overlay">
+            <div id="vue-container">
+                <h1 :class="colorTitle">{{ title }}</h1>
+                <p :class="descrStyle">{{ description }}</p>
+                <img :src="img" alt=":O">
+            </div>
+        </div>
     </div>
 
     <!-- script -->
